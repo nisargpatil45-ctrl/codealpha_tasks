@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">
+        <i class="fa-solid fa-camera-retro"></i> Photo Gallery
+    </h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="btn active" onclick="filterImages('all')">
+            <i class="fa-solid fa-border-all"></i> All
+        </button>
+        <button class="btn" onclick="filterImages('nature')">
+            <i class="fa-solid fa-leaf"></i> Nature
+        </button>
+        <button class="btn" onclick="filterImages('sports')">
+            <i class="fa-solid fa-football"></i> Sports
+        </button>
+        <button class="btn" onclick="filterImages('deserts')">
+            <i class="fa-solid fa-cake-candles"></i> Desserts
+        </button>
+        <button class="btn" onclick="filterImages('advanture')">
+            <i class="fa-solid fa-mountain"></i> Adventure
+        </button>
+        <button class="btn" onclick="filterImages('animals')">
+            <i class="fa-solid fa-paw"></i> Animals
+        </button>
+        <button class="btn" onclick="filterImages('city')">
+            <i class="fa-solid fa-city"></i> City
+        </button>
+    </div>
+
+    <!-- Gallery Container -->
+    <div class="gallery" data-aos="zoom-in">
+
+        <div class="image nature">
+            <img src="./Image/Illustration/nature1.webp" alt="">
+        </div>
+
+        <div class="image sports">
+            <img src="./Image/Illustration/img7.jpg" alt="">
+        </div>
+
+        <div class="image deserts">
+            <img src="./Image/Illustration/deserts1.jpg" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="./Image/Illustration/animals.webp" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="./Image/Illustration/city1.jpeg" alt="">
+        </div>
+
+        <div class="image advanture">
+            <img src="./Image/Illustration/advanture1.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="./Image/Illustration/nature2.webp" alt="">
+        </div>
+
+        <div class="image sports">
+            <img src="./Image/Illustration/img2.avif" alt="">
+        </div>
+
+        <div class="image deserts">
+            <img src="./Image/Illustration/deserts2.jpg" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="./Image/Illustration/animals1.webp" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="./Image/Illustration/city2.jpeg" alt="">
+        </div>
+
+        <div class="image advanture">
+            <img src="./Image/Illustration/advanture2.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="./Image/Illustration/nature3.webp" alt="">
+        </div>
+
+        <div class="image sports">
+            <img src="./Image/Illustration/img3.avif" alt="">
+        </div>
+
+        <div class="image deserts">
+            <img src="./Image/Illustration/desert3.jpg" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="./Image/Illustration/animals5.jpeg" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="./Image/Illustration/city3.jpeg" alt="">
+        </div>
+
+        <div class="image advanture">
+            <img src="./Image/Illustration/advanture3.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="./Image/Illustration/nature4.webp" alt="">
+        </div>
+
+        <div class="image sports">
+            <img src="./Image/Illustration/img4.jpg" alt="">
+        </div>
+
+        <div class="image deserts">
+            <img src="./Image/Illustration/desert4.jpg" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="./Image/Illustration/animals3.webp" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="./Image/Illustration/istockphoto-502846306-612x612.jpg" alt="">
+        </div>
+
+        <div class="image advanture">
+            <img src="./Image/Illustration/adventure4.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+
+        <img id="lightbox-img" class="lightbox-img" src="">
+
+        <div class="navigation">
+            <span class="prev" onclick="changeImage(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </span>
+            <span class="next" onclick="changeImage(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
